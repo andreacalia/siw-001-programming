@@ -7,6 +7,23 @@ The source code of this project can be found in the correspondent <a href="https
 
 If you like it, feel free to contact me&nbsp;&nbsp;<span class="fa fa-smile-o"></span>
 
+Building Project
+===================
+Clone the git repo. Then: 
+<pre>
+	cd path/to/repo
+	npm install
+	bower install
+	grunt serve
+</pre>
+
+In order to build the project you need npm, bower, grunt and sass installed in your system.
+Once you have built it, you can use <code>grunt serve</code> or launch your favourite web server. Simple example:
+<pre>
+	cd app
+	python3 -m http.server
+</pre>
+
 Context
 ===================
 

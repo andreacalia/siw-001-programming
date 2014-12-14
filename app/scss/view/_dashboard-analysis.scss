@@ -1,0 +1,92 @@
+
+$timeMaxCardBackgroundColor: #A40663;
+$scoreMaxCardBackgroundColor: #AE0909;
+$timeMinCardBackgroundColor: #A40663;
+$scoreMinCardBackgroundColor: #AE0909;
+$timeCardColor: #FFF;
+$scoreCardColor: #FFF;
+$aggregatedCardBackgroundColor: $bodyBackgroundColor;
+$aggregatedCardColor: #645D5D;
+
+.dash-analysis-card-container {
+	text-align: center;
+
+	margin-top: 20px;
+	margin-bottom: 20px;	
+}
+
+.dash-analysis-card {
+	width: 250px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: 15px;
+
+	@include border-radius(2%);
+	border: 1px solid $widget-border-color;
+	@include box-shadow(rgba(0,0,0,.24) 0 5px 6px 0);
+
+	label {
+		font-family: OpenSans;
+		font-weight: 300;
+		font-size: larger;
+	}
+
+	p {
+		font-family: OpenSans;
+		font-weight: 600;
+		font-size: x-large;
+	}
+
+	cursor: pointer;
+}
+
+.dash-analysis-card-min-time {
+	background-color: $timeMinCardBackgroundColor;
+	color: $timeCardColor
+}
+.dash-analysis-card-max-time {
+	background-color: $timeMaxCardBackgroundColor;
+	color: $timeCardColor
+}
+.dash-analysis-card-min-score {
+	background-color: $scoreMinCardBackgroundColor;
+	color: $scoreCardColor
+}
+.dash-analysis-card-max-score {
+	background-color: $scoreMaxCardBackgroundColor;
+	color: $scoreCardColor
+}
+
+#dash-analysis-table {
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	thead {
+		background-color: $bodyBackgroundColor;
+	}
+}
+
+#dash-analysis-container {
+
+	h3 {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+}
+
+.dash-analysis-card-aggregated {
+	background-color: $aggregatedCardBackgroundColor;
+	color: $aggregatedCardColor;
+}
+
+#dash-analysis-description {
+	font-family: OpenSans;
+	font-weight: 300;
+	font-size: larger;
+}
+
+#dash-analysis-description {
+	border-color: #3498db;
+}

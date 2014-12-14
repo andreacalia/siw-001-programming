@@ -1,0 +1,117 @@
+
+<% if( analysis == null ) { %>
+
+	<div class="alert alert-info">
+		<strong><span class="fa fa-info-circle"></span></strong>&nbsp;&nbsp;&nbsp;Please select the group you want to analize.
+	</div>
+
+<% } else { %>
+
+<div id="dash-analysis-container">
+
+	<h2>Analysis of <i class="animated bounceIn"><% print(analysis.groupName); %></i></h2>
+
+	<hr/>
+
+	<blockquote id="dash-analysis-description">
+		<p id="dash-analysis-description">
+			<% print(analysis.description); %>
+		</p>
+	</blockquote>
+
+	<h3>Group Aggregated Data</h3>
+
+	<div class="row">
+
+		<div class="col-md-6 dash-analysis-card-container animated flipInY">
+			<div class="dash-analysis-card dash-analysis-card-aggregated" title="Group mean time">
+				<label>Mean Time</label>
+				<p><% print(analysis.groupAggTime); %></p>
+			</div>
+		</div>
+
+		<div class="col-md-6 dash-analysis-card-container animated flipInY">
+			<div class="dash-analysis-card dash-analysis-card-aggregated" title="Group mean score">
+				<label>Mean Score</label>
+				<p><% print(analysis.groupAggScore); %></p>
+			</div>
+		</div>
+
+	</div>
+
+
+	<h3>Group Indivisuals Statistics</h3>
+
+	<div class="row">
+
+		<div class="col-md-6 dash-analysis-card-container animated flipInY">
+			<div class="dash-analysis-card dash-analysis-card-min-time" title="Country with the minimum time of the group">
+				<label>Minimum Time</label>
+				<p><% print(analysis.minTime.country); %></p>
+			</div>
+		</div>
+
+		<div class="col-md-6 dash-analysis-card-container animated flipInY">
+			<div class="dash-analysis-card dash-analysis-card-min-score" title="Country with the minimum score of the group">
+				<label>Minimum Score</label>
+				<p><% print(analysis.minScore.country); %></p>
+			</div>
+		</div>
+
+		<div class="col-md-6 dash-analysis-card-container animated flipInY">
+			<div class="dash-analysis-card dash-analysis-card-max-time" title="Country with the maximum time of the group">
+				<label>Maximum Time</label>
+				<p><% print(analysis.maxTime.country); %></p>
+			</div>
+		</div>
+
+		<div class="col-md-6 dash-analysis-card-container animated flipInY">
+			<div class="dash-analysis-card dash-analysis-card-max-score" title="Country with the maximum score of the group">
+				<label>Maximum Score</label>
+				<p><% print(analysis.maxScore.country); %></p>
+			</div>
+		</div>
+
+	</div>
+
+	<h3>Group Components Detail</h3>
+
+	<div class="table-responsive" id="dash-analysis-table">
+		<table class="table table-hover table-bordered">
+			<thead>
+				<tr>
+					<th>Country</th>
+					<th>Average time</th>
+					<th>Average score</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			<% _.each(analysis.table, function(country) { %> 
+
+				<tr class="animated flipInX">
+					<td>
+						<p class="dash-analysis-country-name">
+							<% print(country.name); %>
+						</p>
+					</td>
+					<td>
+						<p class="dash-analysis-country-time">
+							<% print(country.time); %>
+						</p>
+					</td>
+					<td>
+						<p class="dash-analysis-country-score">
+							<% print(country.score); %>
+						</p>
+					</td>
+				</tr>
+
+			<% }); %>
+
+			</tbody>
+		</table>
+	</div>
+</div>	
+
+<% } %>

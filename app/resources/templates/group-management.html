@@ -1,0 +1,74 @@
+<div class="widget super-fast animated zoomIn">
+<div id="group-management-container">
+
+	<h2 class="widget-title">
+		<span>
+			<% if( mode == 'create' ) { %> 
+				Create New Group
+			<% } else { %>
+				Edit <i class="animated bounceIn"><% print( group.get('name') ); %></i>
+			<% } %>
+		</span>
+	</h2>
+
+	<hr/>
+
+	<div id="group-map-locator"></div>
+
+	<!-- Controls -->
+	<div class="group-controls-container">
+
+	<div class="row">
+	<div class="col-md-12">
+		<form class="form-horizontal" id="group-controls-form" role="input">
+
+			<div class="form-group has-feedback">
+				<label for="group-control-name" class="col-md-2 control-label">Name</label>
+				<div class="col-md-5" data-toggle="tooltip" data-placement="top" title="You will not be able to change this property. It is used to uniquely identify the group.">
+					<input class="form-control" type="text" id="group-control-name" 
+						<% if( mode == 'create' ) { %> 
+							required
+						<% } else { %>
+							readonly
+						<% } %>
+					/>
+					<span class="form-control-feedback">
+						<i class="fa fa-info-circle text-info"></i>
+					</span>
+
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="group-control-description" class="col-md-2 control-label">Description</label>
+				<div class="col-md-5">
+					<textarea class="form-control" id="group-control-description" rows="3" required></textarea>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-2 control-label">Countries</label>
+				<div class="col-md-9">
+					<div class="form-control" id="group-control-countries-locator"></div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-md-offset-2 col-md-10">
+					<button type="submit" class="btn btn-success" id="group-control-create">
+						<% if( mode == 'create' ) { %> 
+							Create
+						<% } else { %>
+							Edit
+						<% } %>
+					</button>
+					<button type="button" class="btn btn-default" id="group-control-cancel">Cancel</button>
+				</div>
+			</div>
+
+		</form>
+	</div>
+	</div>
+
+</div>
+</div>

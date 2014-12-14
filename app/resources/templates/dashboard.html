@@ -1,0 +1,36 @@
+<div class="dash-container">
+<div class="row">
+
+<div class="col-md-3" id="dash-group-selection-container">
+<div class="widget super-fast animated zoomIn">
+
+	<h2>Group Selector</h2>
+
+	<hr/>
+
+	<% groups.each(function(group) { %> 
+
+		<p class="dash-group-entry">
+			<label class="geo-grouping-group-label">
+				<input type="radio" class="dash-group-radio" name="groups-radio" value="<% print(group.get('id')); %>">
+				<% print(group.get('name')); %>
+			</label>
+		</p>
+
+	<% }); %>
+
+
+</div>
+</div>
+
+<div class="col-md-9" id="dash-analysis-container">
+<div class="widget super-fast animated zoomIn">
+
+	<div id="dash-analysis-locator">
+	</div>
+
+</div>
+</div>
+
+</div>
+</div>

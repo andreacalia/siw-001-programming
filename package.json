@@ -1,0 +1,15 @@
+{
+  "name": "assignment-SIW001",
+  "title": "Assignment SIW001",
+  "author": "Andrea Calia",
+  "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "grunt": "*",
+    "load-grunt-tasks": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-sass": "*"
+  }
+}

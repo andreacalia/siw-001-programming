@@ -1,0 +1,101 @@
+
+@import "compass";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600);
+
+$bodyBackgroundColor: #EFEFEF;
+
+$widget-background: #FFF;
+$widget-border-color: #ccc;
+$widget-padding: 14px;
+$fab-background: #2c3e50;
+$fab-color: #FFF;
+
+// View imports
+@import 'view/_nav';
+@import 'view/_home';
+@import 'view/_data-manager';
+@import 'view/_data-filter';
+@import 'view/_data-groups';
+@import 'view/_geo-grouping-settings';
+@import 'view/_geo-filter-settings';
+@import 'view/_geo';
+@import 'view/_map';
+@import 'view/_dashboard';
+@import 'view/_dashboard-analysis';
+@import 'view/_loading';
+@import 'view/_group-management';
+@import 'view/_group-management-countries-control';
+
+.widget {
+	background-color: $widget-background;
+	@include box-shadow(rgba(0,0,0,.24) 0 12px 15px 0);
+	border: 1px solid $widget-border-color;
+	padding: $widget-padding;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	min-height: 50px;
+
+	hr {
+		border-color: $widget-border-color;
+		margin-left: -$widget-padding;
+		margin-right: -$widget-padding;
+	}
+
+	.widget-title {
+		clear: both;
+	}
+
+	.widget-title-control {
+		display: inline;
+		float: right;
+	}
+}
+
+.super-smooth {
+	
+	@include transition(all .25s ease);
+}
+
+.super-fast {
+
+	@include animation-duration(.4s);
+}
+
+body {
+	background-color: $bodyBackgroundColor;
+}
+
+#body-locator {
+	max-width: 1200px;
+}
+
+.disabled {
+	opacity: .4;
+	pointer-events: none;
+}
+
+.fab {
+	@include border-radius(50%);
+	@include box-shadow(rgba(0,0,0,.24) 0 12px 15px 0);
+	padding: 16px;
+	background-color: $fab-background;
+	color: $fab-color;
+	border: 1px solid #ccc;
+	width: 56px;
+	height: 56px;
+	margin: auto;
+}
+
+.opaque {
+	opacity: 1;
+}
+
+.transparent {
+	opacity: 0;
+}
+
+// Override Bootstrap margins of alerts
+.alert {
+	margin-bottom: 0px;
+}

@@ -1,0 +1,10 @@
+<% _.each(group.get('countryCodes'), function(countryCode) { %> 
+	
+	<div class="bg-info group-countries-entry animated flipInX">
+		<span class="group-countries-entry-text"><%= countryCode %></span>
+		<button type="button" class="btn btn-link btn-xs group-countries-entry-remove" data-country="<%= countryCode %>" title="Remove this country from selection">
+			<i class="fa fa-close"></i>
+		</button>
+	</div>
+
+<% }); %>

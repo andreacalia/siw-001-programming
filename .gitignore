@@ -1,0 +1,7 @@
+node_modules/
+.directory
+.sass-cache/
+old/
+app/lib/
+SIW001.sublime-project
+SIW001.sublime-workspace

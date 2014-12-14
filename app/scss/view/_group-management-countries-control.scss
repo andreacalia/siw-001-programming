@@ -1,0 +1,24 @@
+.group-countries-entry {
+	padding: 5px;
+	margin: 5px;
+	display: inline-block;
+	min-width: 70px;
+	clear: both;
+	position: relative;
+}
+
+.group-countries-entry-text {
+	color: #FFF;
+	vertical-align: middle;
+	float: left;
+}
+
+.group-countries-entry-remove {
+	color: #FFF;
+	vertical-align: middle;
+	float: right;
+}
+
+#group-control-countries-locator {
+	height: auto;
+}

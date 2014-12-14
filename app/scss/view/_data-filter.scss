@@ -1,0 +1,6 @@
+#df-filter-loading {
+	margin-left: 20px;
+	display: inline-block;
+
+	@include transition(opacity 1s ease);
+}

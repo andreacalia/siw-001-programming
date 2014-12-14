@@ -1,0 +1,78 @@
+<div class="widget super-fast animated zoomIn">
+<div id="df-container">
+
+<h2 class="widget-title">
+	<span>Data Filters</span>
+</h2>
+
+<hr/>
+
+<div class="row">
+<div class="col-md-12">
+	<form class="form-horizontal" role="form" id="df-filter-form">
+
+		<div class="form-group">
+			<label for="df-filter-test" class="col-md-4 control-label">Test</label>
+			<div class="col-md-8">
+				<select class="form-control" id="df-filter-test" required>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="7">7</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="df-filter-gender" class="col-md-4 control-label">Gender</label>
+			<div class="col-md-8">
+				<select class="form-control" id="df-filter-gender" required>
+					<option value="all">All</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="df-filter-age" class="col-md-4 control-label">Age</label>
+			<div class="col-md-8">
+				<select class="form-control" id="df-filter-age" required>
+					<option value="all">All</option>
+					<option value="0">0 - 18</option>
+					<option value="18">18 - 40</option>
+					<option value="39">40+</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="df-filter-begin-date" class="col-md-4 control-label">Begin date</label>
+			<div class="col-md-8">
+				<input type="date" class="form-control" id="df-filter-begin-date" required/>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="df-filter-end-date" class="col-md-4 control-label">End date</label>
+			<div class="col-md-8">
+				<input type="date" class="form-control" id="df-filter-end-date" required/>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-md-offset-4 col-md-8">
+				<button type="submit" class="btn btn-primary" id="df-filter-apply">Apply</button>
+				<div id="df-filter-loading" class="transparent">
+					<i class="fa fa-circle-o-notch fa-spin"></i>
+				</div>
+			</div>
+		</div>
+
+	</form>
+</div>
+</div>
+
+</div>
+</div>

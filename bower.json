@@ -1,0 +1,18 @@
+{
+  "name": "assignment-SIW001",
+  "title": "Assignment SIW001",
+  "author": "Andrea Calia",
+  "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.",
+  "version": "1.0.0",
+  "dependencies": {
+    "modernizr": "latest",
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "jquery": "latest",
+    "animate.css": "latest",
+    "underscore": "latest",
+    "requirejs-plugins": "latest",
+    "humane-js": "latest",
+    "bootstrap-switch": "latest"
+  }
+}

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default navbar-static-top super-fast animated fadeInDown" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="nav-navbar">
+			<ul class="nav navbar-nav">
+				<li id="nav-home-entry" class="nav-entry">
+					<a href="<% print( Router.routes.home() ); %>">Home</a>
+				</li>
+				<li id="nav-data-manager-entry" class="nav-entry">
+					<a href="<% print( Router.routes.dataManager() ); %>">Management</a>
+				</li>
+				<li id="nav-dashboard-entry" class="nav-entry">
+					<a href="<% print( Router.routes.dashboard() ); %>">Dashboard</a>
+				</li>
+				<li id="nav-geo-entry" class="nav-entry">
+					<a href="<% print( Router.routes.geo() ); %>">Geo</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

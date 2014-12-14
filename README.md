@@ -24,6 +24,10 @@ Once you have built it, you can use <code>grunt serve</code> or launch your favo
 	python3 -m http.server
 </pre>
 
+A demo of the application can be found <a href="http://andreacalia.github.io/master/programming/">HERE</a>.
+
+**NOTE** This application uses the latest HTML5 features. It is highly recommended to test with **Chome/Chromium**.
+
 Context
 ===================
 
